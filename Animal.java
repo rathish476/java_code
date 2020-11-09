@@ -1,35 +1,25 @@
-package com.inheritance;
+package star.over_time;
 
 public class Animal {
-	void eat()
-	{
-		System.out.println("eating...");
+	public void move() {
+		System.out.println("animals can move");
 		
 	}
 
 }
-class dog extends Animal{
-	void bark()
-	{
-		System.out.println("barking...");
+class Dog extends Animal{
+	public void move() {
+		System.out.println("Dogs can walk and run");
 		
 	}
 }
-class cat extends Animal{
-	void meow()
-	{
-		System.out.println("meowing...");
-		
-	}
-}
-class hierarchicalinheritance{
+class TestDog {
 	public static void main(String args[]) {
-		dog c=new dog();
-		cat a=new cat();
-		a.meow();
-		a.eat();
-		c.bark();
-		c.eat();
-	
+		
+	    Animal a = new Dog();
+  
+	    a.move();
 	}
 }
+
+
